@@ -1,0 +1,470 @@
+{
+ "modelo_id": "austral-scorecard-consumo",
+ "version": "1.0.0",
+ "cartera": "Crédito de consumo — Banco Austral",
+ "uso": "Admisión: aprobar o rechazar solicitudes de crédito de consumo",
+ "variables": [
+  "uso_linea_prom_12m",
+  "meses_desde_mora_12m",
+  "uso_tc_prom_12m",
+  "deuda_interna_max_3m",
+  "antiguedad_meses",
+  "deuda_otras_prom_12m",
+  "carga_financiera",
+  "uso_tc_prom_3m"
+ ],
+ "scorecard": [
+  {
+   "variable": "uso_linea_prom_12m",
+   "tramo": "(-inf, 0.215]",
+   "desde": -Infinity,
+   "hasta": 0.21489151515151517,
+   "woe": 2.3060718744166206,
+   "puntos": 105.40365312232092
+  },
+  {
+   "variable": "uso_linea_prom_12m",
+   "tramo": "(0.215, 0.26]",
+   "desde": 0.21489151515151517,
+   "hasta": 0.2599440476190476,
+   "woe": 2.0517340122377172,
+   "puntos": 101.69765423406132
+  },
+  {
+   "variable": "uso_linea_prom_12m",
+   "tramo": "(0.26, 0.307]",
+   "desde": 0.2599440476190476,
+   "hasta": 0.3074674388674389,
+   "woe": 1.1028097827466834,
+   "puntos": 87.87072296472998
+  },
+  {
+   "variable": "uso_linea_prom_12m",
+   "tramo": "(0.307, 0.364]",
+   "desde": 0.3074674388674389,
+   "hasta": 0.36350317066446103,
+   "woe": -0.1197829769188151,
+   "puntos": 70.0561224593303
+  },
+  {
+   "variable": "uso_linea_prom_12m",
+   "tramo": "(0.364, inf]",
+   "desde": 0.36350317066446103,
+   "hasta": Infinity,
+   "woe": -1.3223326268265116,
+   "puntos": 52.53357340802135
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "(-inf, 2.0]",
+   "desde": -Infinity,
+   "hasta": 2.0,
+   "woe": -2.0207428238594227,
+   "puntos": 27.05250604586731
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "(2.0, 4.0]",
+   "desde": 2.0,
+   "hasta": 4.0,
+   "woe": -0.7803887336352962,
+   "puntos": 54.519928899088654
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "(4.0, 7.0]",
+   "desde": 4.0,
+   "hasta": 7.0,
+   "woe": 0.16016953112038534,
+   "puntos": 75.34842600306337
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "(7.0, 9.0]",
+   "desde": 7.0,
+   "hasta": 9.0,
+   "woe": -0.8615224695292151,
+   "puntos": 52.723236608537036
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "(9.0, inf]",
+   "desde": 9.0,
+   "hasta": 12.0,
+   "woe": -0.31940354914150076,
+   "puntos": 64.72836461221098
+  },
+  {
+   "variable": "meses_desde_mora_12m",
+   "tramo": "= 13",
+   "desde": 12.0,
+   "hasta": 13.0,
+   "woe": 0.38010525650108723,
+   "puntos": 80.21886390234914
+  },
+  {
+   "variable": "uso_tc_prom_12m",
+   "tramo": "(-inf, 0.208]",
+   "desde": -Infinity,
+   "hasta": 0.20825396825396827,
+   "woe": 4.256500103446723,
+   "puntos": 115.09620511354225
+  },
+  {
+   "variable": "uso_tc_prom_12m",
+   "tramo": "(0.208, 0.252]",
+   "desde": 0.20825396825396827,
+   "hasta": 0.2518586956521739,
+   "woe": 1.536356028561266,
+   "puntos": 87.42844219414097
+  },
+  {
+   "variable": "uso_tc_prom_12m",
+   "tramo": "(0.252, 0.292]",
+   "desde": 0.2518586956521739,
+   "hasta": 0.29194372294372295,
+   "woe": 0.5108642212864907,
+   "puntos": 76.99772109321488
+  },
+  {
+   "variable": "uso_tc_prom_12m",
+   "tramo": "(0.292, 0.339]",
+   "desde": 0.29194372294372295,
+   "hasta": 0.33897222222222223,
+   "woe": -0.09116194750653245,
+   "puntos": 70.87425231697287
+  },
+  {
+   "variable": "uso_tc_prom_12m",
+   "tramo": "(0.339, inf]",
+   "desde": 0.33897222222222223,
+   "hasta": Infinity,
+   "woe": -1.2328811800470207,
+   "puntos": 59.26133175952732
+  },
+  {
+   "variable": "deuda_interna_max_3m",
+   "tramo": "(-inf, 1128000.0]",
+   "desde": -Infinity,
+   "hasta": 1128000.0,
+   "woe": 0.0688111572174851,
+   "puntos": 73.63944098814684
+  },
+  {
+   "variable": "deuda_interna_max_3m",
+   "tramo": "(1128000.0, 1684400.0]",
+   "desde": 1128000.0,
+   "hasta": 1684400.0,
+   "woe": -0.48372059099520753,
+   "puntos": 58.881357898047746
+  },
+  {
+   "variable": "deuda_interna_max_3m",
+   "tramo": "(1684400.0, 2363200.0]",
+   "desde": 1684400.0,
+   "hasta": 2363200.000000001,
+   "woe": -0.0006332119888639262,
+   "puntos": 71.78458690202055
+  },
+  {
+   "variable": "deuda_interna_max_3m",
+   "tramo": "(2363200.0, 3553600.0]",
+   "desde": 2363200.000000001,
+   "hasta": 3553600.0000000005,
+   "woe": 0.5108642212864907,
+   "puntos": 85.44664640370239
+  },
+  {
+   "variable": "deuda_interna_max_3m",
+   "tramo": "(3553600.0, inf]",
+   "desde": 3553600.0000000005,
+   "hasta": Infinity,
+   "woe": 0.13440843970329835,
+   "puntos": 75.39153966580993
+  },
+  {
+   "variable": "antiguedad_meses",
+   "tramo": "(-inf, 29.0]",
+   "desde": -Infinity,
+   "hasta": 29.0,
+   "woe": -0.5023087359395838,
+   "puntos": 63.01712873567127
+  },
+  {
+   "variable": "antiguedad_meses",
+   "tramo": "(29.0, 59.0]",
+   "desde": 29.0,
+   "hasta": 59.0,
+   "woe": -0.22420939551012292,
+   "puntos": 67.88052780797462
+  },
+  {
+   "variable": "antiguedad_meses",
+   "tramo": "(59.0, 99.6]",
+   "desde": 59.0,
+   "hasta": 99.60000000000036,
+   "woe": -0.014987525440546927,
+   "puntos": 71.53939822180085
+  },
+  {
+   "variable": "antiguedad_meses",
+   "tramo": "(99.6, 161.0]",
+   "desde": 99.60000000000036,
+   "hasta": 161.0,
+   "woe": 0.4177737982204788,
+   "puntos": 79.10752483717357
+  },
+  {
+   "variable": "antiguedad_meses",
+   "tramo": "(161.0, inf]",
+   "desde": 161.0,
+   "hasta": Infinity,
+   "woe": 0.796636264882909,
+   "puntos": 85.73306866640814
+  },
+  {
+   "variable": "deuda_otras_prom_12m",
+   "tramo": "(-inf, 1407666.667]",
+   "desde": -Infinity,
+   "hasta": 1407666.6666666667,
+   "woe": -0.22592781261940914,
+   "puntos": 66.65573181304151
+  },
+  {
+   "variable": "deuda_otras_prom_12m",
+   "tramo": "(1407666.667, 2437833.333]",
+   "desde": 1407666.6666666667,
+   "hasta": 2437833.333333334,
+   "woe": -0.17493505694849912,
+   "puntos": 67.81715100366239
+  },
+  {
+   "variable": "deuda_otras_prom_12m",
+   "tramo": "(2437833.333, 3696333.333]",
+   "desde": 2437833.333333334,
+   "hasta": 3696333.3333333354,
+   "woe": -0.1197829769188151,
+   "puntos": 69.073303633705
+  },
+  {
+   "variable": "deuda_otras_prom_12m",
+   "tramo": "(3696333.333, 5705100.0]",
+   "desde": 3696333.3333333354,
+   "hasta": 5705100.000000002,
+   "woe": -0.17493505694849912,
+   "puntos": 67.81715100366239
+  },
+  {
+   "variable": "deuda_otras_prom_12m",
+   "tramo": "(5705100.0, inf]",
+   "desde": 5705100.000000002,
+   "hasta": Infinity,
+   "woe": 1.2984451801879668,
+   "puntos": 101.37509585244477
+  },
+  {
+   "variable": "carga_financiera",
+   "tramo": "(-inf, 1.903]",
+   "desde": -Infinity,
+   "hasta": 1.903084867034617,
+   "woe": 0.9409357388040759,
+   "puntos": 83.14537801052316
+  },
+  {
+   "variable": "carga_financiera",
+   "tramo": "(1.903, 2.641]",
+   "desde": 1.903084867034617,
+   "hasta": 2.6406897430977723,
+   "woe": 0.20618255741166666,
+   "puntos": 74.28722739336811
+  },
+  {
+   "variable": "carga_financiera",
+   "tramo": "(2.641, 3.313]",
+   "desde": 2.6406897430977723,
+   "hasta": 3.31252013852622,
+   "woe": 0.3263902888377187,
+   "puntos": 75.73644628385401
+  },
+  {
+   "variable": "carga_financiera",
+   "tramo": "(3.313, 4.067]",
+   "desde": 3.31252013852622,
+   "hasta": 4.066698137994902,
+   "woe": 0.20618255741166666,
+   "puntos": 74.28722739336811
+  },
+  {
+   "variable": "carga_financiera",
+   "tramo": "(4.067, inf]",
+   "desde": 4.066698137994902,
+   "hasta": Infinity,
+   "woe": -0.865323156915461,
+   "puntos": 61.3692037018411
+  },
+  {
+   "variable": "uso_tc_prom_3m",
+   "tramo": "(-inf, 0.184]",
+   "desde": -Infinity,
+   "hasta": 0.18358970514742629,
+   "woe": 2.0532468718303476,
+   "puntos": 90.09811950064972
+  },
+  {
+   "variable": "uso_tc_prom_3m",
+   "tramo": "(0.184, 0.242]",
+   "desde": 0.18358970514742629,
+   "hasta": 0.24202539682539684,
+   "woe": 1.536356028561266,
+   "puntos": 85.49207078871495
+  },
+  {
+   "variable": "uso_tc_prom_3m",
+   "tramo": "(0.242, 0.294]",
+   "desde": 0.24202539682539684,
+   "hasta": 0.2939259259259259,
+   "woe": 0.16889461577446757,
+   "puntos": 73.30653111238486
+  },
+  {
+   "variable": "uso_tc_prom_3m",
+   "tramo": "(0.294, 0.365]",
+   "desde": 0.2939259259259259,
+   "hasta": 0.3648047138047138,
+   "woe": -0.14769518190600425,
+   "puntos": 70.48537835101024
+  },
+  {
+   "variable": "uso_tc_prom_3m",
+   "tramo": "(0.365, inf]",
+   "desde": 0.3648047138047138,
+   "hasta": Infinity,
+   "woe": -1.0614798245663242,
+   "puntos": 62.34258257290773
+  }
+ ],
+ "calibracion": {
+  "tendencia_central": 0.05421536876086807,
+  "delta": 0.11149187543698331,
+  "corrimiento_puntos": -3.2169755158469173,
+  "regla": "score calibrado = suma de los puntos + corrimiento_puntos"
+ },
+ "escalado": {
+  "score_base": 600,
+  "odds_base": 50,
+  "pdo": 20,
+  "factor": 28.85390081777927,
+  "offset": 487.1228762045055
+ },
+ "coeficientes": {
+  "const": -3.025210488344135,
+  "uso_linea_prom_12m": -0.5049980876910322,
+  "meses_desde_mora_12m": -0.7674811111606816,
+  "uso_tc_prom_12m": -0.3525150016326168,
+  "deuda_interna_max_3m": -0.925695556631962,
+  "antiguedad_meses": -0.6060876213692374,
+  "deuda_otras_prom_12m": -0.789361573850309,
+  "carga_financiera": -0.41782752907722115,
+  "uso_tc_prom_3m": -0.30883403331419756
+ },
+ "master_scale": {
+  "cortes": [
+   540,
+   560,
+   580,
+   600,
+   620,
+   640,
+   660
+  ],
+  "etiquetas": [
+   "E",
+   "D",
+   "C2",
+   "C1",
+   "B2",
+   "B1",
+   "A2",
+   "A1"
+  ],
+  "regla": "banda = tramo de 20 puntos del score calibrado; E bajo 540, A1 desde 660"
+ },
+ "politica": {
+  "cutoff": 560,
+  "regla": "aprobar si score calibrado >= cutoff"
+ },
+ "contrato_datos": {
+  "uso_linea_prom_12m": {
+   "tipo": "numerico",
+   "minimo": 0.07098214285714285,
+   "maximo": 0.5883333333333333,
+   "p01": 0.11200650594829559,
+   "p99": 0.5151924603174602,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "meses_desde_mora_12m": {
+   "tipo": "numerico",
+   "minimo": 1.0,
+   "maximo": 13.0,
+   "p01": 1.0,
+   "p99": 13.0,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "uso_tc_prom_12m": {
+   "tipo": "numerico",
+   "minimo": 0.05876470588235295,
+   "maximo": 0.57225,
+   "p01": 0.11456276041666667,
+   "p99": 0.4764608333333333,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "deuda_interna_max_3m": {
+   "tipo": "numerico",
+   "minimo": 246000.0,
+   "maximo": 16475000.0,
+   "p01": 464000.0,
+   "p99": 8852989.999999996,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "antiguedad_meses": {
+   "tipo": "numerico",
+   "minimo": 6.0,
+   "maximo": 344.0,
+   "p01": 7.0,
+   "p99": 342.0,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "deuda_otras_prom_12m": {
+   "tipo": "numerico",
+   "minimo": 147500.0,
+   "maximo": 44690833.333333336,
+   "p01": 382058.3333333333,
+   "p99": 17428316.666666664,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "carga_financiera": {
+   "tipo": "numerico",
+   "minimo": 0.5158305797536799,
+   "maximo": 17.582259905429645,
+   "p01": 0.846128331259171,
+   "p99": 7.907238411469898,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  },
+  "uso_tc_prom_3m": {
+   "tipo": "numerico",
+   "minimo": 0.04516339869281046,
+   "maximo": 0.7257142857142856,
+   "p01": 0.0832321513002364,
+   "p99": 0.5441135802469135,
+   "pct_missing_dev": 0.0,
+   "pct_missing_max": 0.01
+  }
+ }
+}
